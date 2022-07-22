@@ -1,13 +1,7 @@
 require("./db/connection");
 const yargs = require("yargs");
 const mongoose = require("mongoose");
-const {
-  createFilm,
-  readFilms,
-  deleteFilm,
-  updateFilm,
-  searchFilms
-} = require("./film/functions");
+const { createFilm, readFilms, deleteFilm, updateFilm, searchFilms } = require("./film/functions");
 
 const app = async (yargsObj) => {
   if (yargsObj.create) {
